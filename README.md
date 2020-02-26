@@ -4,7 +4,7 @@ Image to generate dummy ssl certificates for development
 
 ## Usage
 
-```docker run --user $(id -u):$(id -g) -ti --rm --mount type=bind,source=$(pwd)/certificates,target=/certificates --env DOMAIN=development.host.com dummy-ssl-certificates```
+```docker run --user $(id -u):$(id -g) -ti --rm --mount type=bind,source=$(pwd)/certificates,target=/certificates --env DOMAIN=development.host.com maceda/dummy-ssl-certificates```
 
 This will generate the following files into ./certificates directory:
 - A dummy Certification Authority certificate (dummyRootCA.pem) and key(dummyRootCA.key). You must import the certification authority in your browser.
